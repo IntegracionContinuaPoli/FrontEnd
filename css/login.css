@@ -1,0 +1,98 @@
+body {
+	overflow-y: hidden;
+	background-image: linear-gradient(to right, #77f , dodgerBlue);
+}
+
+.loginImage {
+	text-align: center;
+}
+
+.loginImage img {
+	width: 80px;
+	height: 80px;
+	filter: grayscale(70%)
+}
+
+.loginImage p {
+	font-weight: bold;
+	font-family: Sans-serif;
+}
+
+#loginContainer {
+	max-width: 300px;
+	max-height: 300px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	padding: 2% 2%;
+	background-image: linear-gradient(to right, #eee , #ddd);
+}
+
+input[type="text"], input[type='password'], input[type='submit'] {
+	width: 100%;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin: 8px 0;
+	outline: none;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+
+input[type='submit']:hover {
+	border-color: #77f;
+	background-color: #77f;
+	cursor: hand;
+}
+
+input[type='submit'] {
+	border-color: dodgerBlue;
+	background-color: dodgerBlue;
+	color: white;	
+}
+
+input[type="text"]:focus, input[type='password']:focus {
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+
+
+.loginInput input[type="text"], input[type='password'] {
+	padding-left: 40px;
+}
+
+.loginInput {
+	position: relative;
+}
+
+.loginInput i {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	padding: 10px 8px;
+	color: #aaa;
+	transition: 0.3s;
+}
+
+.loginInput input[type="text"]:focus + i, input[type='password']:focus + i {
+	color: dodgerBlue;
+}
+
+.loginInput.inputIconBg i {
+	background-color: #aaa;
+	color: #fff;
+	padding: 9px 4px;
+	border-radius: 4px 0 0 4px;
+}
+
+.loginInput.inputIconBg input[type="text"]:focus + i, input[type='password']:focus + (i + 1) {
+	color: #fff;
+	background-color: dodgerBlue;
+}
+

@@ -1,0 +1,47 @@
+body {
+	overflow-y: hidden;
+	font-family: Sans-Serif;
+	font-size: 10pt;
+}
+
+input[type="text"], input[type='submit'] {
+	width: 100%;
+	display: block;
+	margin: 1% auto;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	outline: none;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+
+input[type='submit']:hover {
+	border-color: #77f;
+	background-color: #77f;
+	cursor: hand;
+}
+
+input[type='submit'] {
+	border-color: dodgerBlue;
+	background-color: dodgerBlue;
+	color: white;
+	margin-top: 5%;
+}
+
+input[type="text"]:focus {
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.userInput {
+	position: relative;
+	margin: 5% auto;
+	width: 45%;
+}
+
+.inputDate {
+	width: 40px;
+	text-align: center;
+}
+

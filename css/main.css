@@ -1,0 +1,115 @@
+body {
+	overflow-y: hidden;
+	font-family: Sans-Serif;
+	font-size: 10pt;
+}
+
+
+
+#header {
+	background-color: rgb(62, 69, 76);
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.userDropBtn {
+	background-color: rgb(43, 48, 53);
+	color: white;
+	padding: 14px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	min-width: 180px;
+	text-align: right;
+	outline-width: 0;
+}
+
+.userDropDown {
+	position: relative;
+	float: right;
+	display: inline-block;
+}
+
+.userDropBtn-Content {
+	display: none;
+	position: absolute;
+	min-width: 180px;
+	overflow: auto;
+	z-index: 1;
+	background-color: rgb(28, 31, 34);
+}
+
+.userDropBtn-Content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.userDropDown a:hover {
+	color: rgb(255, 95, 55);
+}
+
+
+#menuDropDownList {
+	min-height: 2160px;
+}
+
+.menuDropBtn {
+	background-color: rgb(22, 131, 198);
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	min-width: 40px;
+	outline-width: 0;
+}
+
+
+.menuDropDown {
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+
+.menuDropBtn-Content {
+	display: none;
+	position: absolute;
+	background-color: rgb(38, 39, 41);
+	color: white;
+	min-width: 180px;
+	overflow: auto;
+	z-index: 1;
+}
+
+.menuDropBtn-Content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.menuDropDown a {
+	border-left: solid 4px rgb(38, 39, 41)
+}
+
+.menuDropDown a:hover {
+	background-color: rgb(53, 58, 62);
+	border-left: solid 4px rgb(22, 131, 198);
+}
+
+.show {
+	display: block;
+}
+
+#content-frame {
+	border: none;
+	overflow: hidden;
+	margin: 5% auto;
+	width: 100%;
+	height: 1000px;
+}
