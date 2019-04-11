@@ -11,7 +11,7 @@ input[type="text"], input[type='password'], input[type='submit'] {
 	border: 2px solid #aaa;
 	border-radius: 4px;
 	outline: none;
-	padding: 10px;
+	padding: 5px;
 	box-sizing: border-box;
 	transition: 0.3s;
 }
@@ -36,7 +36,7 @@ input[type="text"]:focus, input[type='password']:focus {
 
 .userInput {
 	position: relative;
-	margin: 5% auto;
+	margin: 0% auto;
 	width: 45%;
 }
 
