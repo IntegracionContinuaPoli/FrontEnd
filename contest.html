@@ -15,7 +15,7 @@
 		
 			<div class="userInput">
 				
-				
+				<label for="field1">Contest number:</label>
 				<select>
 					<option value="volvo">Volvo</option>
 					<option value="saab">Saab</option>
@@ -23,17 +23,36 @@
 					<option value="audi">Audi</option>
 				</select>
 				<label for="field1">Name:</label>
-				<input type="text" id="field1">
+				<input type="text" id="field1" class="defaultInputStyle">
 				<label for="field1">Start date:</label>
-				<input type="text" placeholder="hh" class="inputDate">
-				<input type="text" placeholder="mm" class="inputDate">
-				<input type="text" placeholder="dd" class="inputDate">/
-				<input type="text" placeholder="mm" class="inputDate">/
-				<input type="text" placeholder="yyyy" class="inputDate">
+				<input type="number" placeholder="yyyy" class="inputDate" max="9999" min="0000" required>
+				<input type="number" placeholder="MM" class="inputDate" max="12" min="1" required>
+				<input type="number" placeholder="dd" class="inputDate" max="31" min="1" required>
+				<input type="number" placeholder="hh" class="inputDate" max="23" min="0" required>
+				<input type="number" placeholder="mm" class="inputDate" max="59" min="0" required>
+				
+				<label for="field1">Duration (in minutes):</label>
+				<input type="number" class="defaultInputStyle" required>
+				<label for="field1">Stop answering (in minutes):</label>
+				<input type="number" class="defaultInputStyle" required>
+				<label for="field1">Stop scoreboard (in minutes):</label>
+				<input type="number" class="defaultInputStyle" required>
+				<label for="field1">Penalty (in minutes):</label>
+				<input type="number" class="defaultInputStyle" required>
+				<label for="field1">Max file size allowed for teams (in KB):</label>
+				<input type="number" class="defaultInputStyle" required>
+				<p>Your PHP config. allows at most: 128 MB (max. post) and 128MB(max. filesize)</p>
+				
+				<label for="field1">Contest main site URL (IP/bocafolder):</label>
+				<input type="text" class="defaultInputStyle" required>
+				<label for="field1">Contest main site number:</label>
+				<input type="number" class="defaultInputStyle" required>
+				<label for="field1">Contest local site number:</label>
+				<input type="number" class="defaultInputStyle" required>
 				
 				
 				
-				<input type="submit" value="Save">
+				<input type="submit" value="Save" class="defaultInputStyle">
 
 			</div>
 		
