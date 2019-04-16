@@ -1,6 +1,25 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body {
 	font-family: Sans-Serif;
-	font-size: 10pt;
+	font-size: 11pt;
 }
 
 .defaultInputStyle {
@@ -43,7 +62,7 @@ input[type='submit'] {
 }
 
 .inputDate, select {
-	width: 10%;
+	width: 15%;
 	display: inline;
 	margin: 1% auto;
 	border: 2px solid #aaa;
